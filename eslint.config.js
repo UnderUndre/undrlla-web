@@ -1314,6 +1314,14 @@ export default tseslint.config(
 						'@playwright/*',
 						'*' // node modules
 					]
+				},
+				'off',
+				{
+					'target': 'src/vs/platform/request/test/**',
+					'restrictions': [
+						'vs/platform/request/common/**',
+						'@jest/globals'
+					]
 				}
 			]
 		}

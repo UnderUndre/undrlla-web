@@ -32,7 +32,7 @@ after(async function () {
 });
 
 const pageErrors: any[] = [];
-beforeEach(async function () {
+beforeEach(async function (this: Mocha.Context) {
 	this.timeout(TIMEOUT);
 	page = await browser.newPage({
 		viewport: {
@@ -59,7 +59,7 @@ afterEach(async () => {
 	}
 });
 
-describe('API Integration Tests', function (): void {
+describe('API Integration Tests', function (this: Mocha.Suite): void {
 	this.timeout(TIMEOUT);
 
 	beforeEach(async () => {

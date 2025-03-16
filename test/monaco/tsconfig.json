@@ -12,7 +12,8 @@
 		"lib": [
 			"esnext", // for #201187
 			"dom"
-		]
+		],
+		"types": ["mocha"]
 	},
 	"exclude": [
 		"node_modules",

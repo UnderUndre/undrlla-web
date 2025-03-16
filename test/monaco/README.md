@@ -5,7 +5,7 @@ This directory contains scripts that are used to smoke test the Monaco Editor di
 ## Setup & Bundle
 
  $test/monaco> npm i
- $test/monaco> npm run bundle
+ $test/monaco> npm run bundle-webpack
 
 ## Compile and run tests
 

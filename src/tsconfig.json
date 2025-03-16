@@ -9,6 +9,10 @@
 		"resolveJsonModule": true,
 		"isolatedModules": false,
 		"outDir": "../out/vs",
+		"baseUrl": ".",
+        "paths": {
+            "vs/*": ["src/vs/*"]
+        },
 		"types": [
 			"@webgpu/types",
 			"mocha",
@@ -26,6 +30,8 @@
 		]
 	},
 	"include": [
+		"src/**/*.ts",
+        "test/**/*.ts",
 		"./*.ts",
 		"./typings",
 		"./vs/**/*.ts",
